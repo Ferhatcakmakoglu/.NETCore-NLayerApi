@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8TTTB7LmScevTDW9KlyT9NEtwTNxFb76O10sDJW3E8mXVNT8Cdj352IJSvmA/5/qGnwLRGQG7yz319/Yn3uWDg==",
+  "dgSpecHash": "HiIH1ujc5kwaMxIGJ4Oi1ukUMSz8476wfafpLazV2p789ipEROlOgdo1TeNYj9MBWWeD805CXuZc3Pe5MvZfOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ferhat\\source\\repos\\c\\NLayerUdemyApp\\NLayer.Service\\NLayer.Service.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\Ferhat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Ferhat\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ferhat\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Ferhat\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\Ferhat\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Ferhat\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\Ferhat\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Ferhat\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Ferhat\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

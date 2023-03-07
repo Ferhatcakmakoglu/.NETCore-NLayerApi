@@ -9,6 +9,9 @@ C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\AutoMa
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
