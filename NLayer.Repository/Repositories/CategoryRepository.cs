@@ -19,6 +19,7 @@ namespace NLayer.Repository.Repositories
         {
             //Birde SingleOrDefaultAsync yerine FirstAll diye komut var onun amacı aynı id ye sahip ilk datayı getiri
             //Bu yazdıgımız ise sadece 1 id için calısır. Sistemimizde id foreign key old. icin hata vermez
+
             return await _context.Categories.Include(x => x.Products).Where(x => x.Id == categoryId).SingleOrDefaultAsync();
         }
     }
