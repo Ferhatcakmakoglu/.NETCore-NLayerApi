@@ -96,3 +96,5 @@ C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\obj\Debug\net6.0\refint
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\obj\Debug\net6.0\NLayer.API.pdb
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\obj\Debug\net6.0\NLayer.API.genruntimeconfig.cache
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\obj\Debug\net6.0\ref\NLayer.API.dll
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\Autofac.dll
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.API\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll

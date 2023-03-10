@@ -1,8 +1,11 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NLayer.API.Filters;
 using NLayer.API.Middlewares;
+using NLayer.API.Modules;
 using NLayer.Core.Repositories;
 using NLayer.Core.Services;
 using NLayer.Core.UnitOfWorks;
@@ -39,19 +42,26 @@ builder.Services.AddScoped(typeof(NotFoundFilter<>));
 //IUnitOfWork u ve UnitOfWork Tanýmlandý
 //Yani Sistem eger IUnitOfWork gorurse UnitOfWork'ten miras
 //alacagýný bilicek
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+//builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 //Burda da IGenericRepository gordugunde GenericRepository e gitmesini sagladýk
 //typeof ile yapma sebebimiz bunlar Generic <> oldugundan
-builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IProductService, ProductService>();
+
+//builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+//builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 
 
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
+/*
+    builder.Services.AddScoped<IProductRepository, ProductRepository>();
+    builder.Services.AddScoped<IProductService, ProductService>();
+*/
 
+/*
+    builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+    builder.Services.AddScoped<ICategoryService, CategoryService>();
+*/
    
 //Bir tane MapProfile classý oldugu icin direkt typeof ile verdik
 //Eger Profile sýnýfýndan tureyen daha fazla MapProfile olsaydý
@@ -76,6 +86,11 @@ builder.Services.AddDbContext<AppDbContext>(x =>
         option.MigrationsAssembly(Assembly.GetAssembly(typeof(AppDbContext)).GetName().Name);
     });
 });
+
+
+//AutoFac etklenti yeri
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => containerBuilder.RegisterModule(new RepoServiceModule()));
 
 
 var app = builder.Build();

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6EmUIzMovR4LhJD6fimsYdg5YuP/yUMWQlAC5Ic7e/LCwU2laZEGDivbpY2RafSkBnRR4k6q6sUvKipXK9K9wg==",
+  "dgSpecHash": "vFHF5t+DHXYURtEuMOlhOdQ/U5wPnL+SyvAxY605kIqIoncCWnuSPY34J1v/rftVJ24QdH25X5dXlKwlH8r6jw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ferhat\\source\\repos\\c\\NLayerUdemyApp\\NLayer.API\\NLayer.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ferhat\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
+    "C:\\Users\\Ferhat\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\Ferhat\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Ferhat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Ferhat\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
