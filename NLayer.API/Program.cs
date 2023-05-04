@@ -37,6 +37,11 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+//Catching islemini tanýmladýgýmýz yer
+builder.Services.AddMemoryCache();
+
+
 builder.Services.AddScoped(typeof(NotFoundFilter<>));
 
 //IUnitOfWork u ve UnitOfWork Tanýmlandý
@@ -91,6 +96,8 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 //AutoFac etklenti yeri
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => containerBuilder.RegisterModule(new RepoServiceModule()));
+
+
 
 
 var app = builder.Build();

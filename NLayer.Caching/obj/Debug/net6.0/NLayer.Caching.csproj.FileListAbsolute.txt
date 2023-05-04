@@ -10,3 +10,10 @@ C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\obj\Debug\net6.0\NL
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\obj\Debug\net6.0\refint\NLayer.Caching.dll
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\obj\Debug\net6.0\NLayer.Caching.pdb
 C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\obj\Debug\net6.0\ref\NLayer.Caching.dll
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Core.dll
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Repository.dll
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Service.dll
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Service.pdb
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Core.pdb
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Repository.pdb
+C:\Users\Ferhat\source\repos\c\NLayerUdemyApp\NLayer.Caching\obj\Debug\net6.0\NLayer.Caching.csproj.CopyComplete
