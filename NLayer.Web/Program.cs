@@ -1,7 +1,46 @@
+using Autofac.Extensions.DependencyInjection;
+using Autofac;
+using NLayer.Web.Modules;
+using Microsoft.EntityFrameworkCore;
+using NLayer.Repository;
+using NLayer.Service.Mapping;
+using System.Reflection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddAutoMapper(typeof(MapProfile));
+
+//AppDbContext'i sisteme belirledik
+builder.Services.AddDbContext<AppDbContext>(x =>
+{
+    x.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"), option =>
+    {
+        /*
+            Burayý yapma amacýmýz SqlConnection baglantýsýnýn nerde oldugunu sisteme
+            anlatmamýz gerekmektedir. Options methodu ile bunu gerceklestirdik
+         */
+
+        //option.MigrationsAssembly("NLayer.Repository");
+        //Üstte yazdýgýmýz kod ile benzer iþi yapar. Altta yazdýgýmýz daha dinamik.
+        //Yani eðer NLayer.repository nin ismi degisirse otomatik olarak bulacaktýr ismi
+        //(AppDbContext sayesinde)
+        option.MigrationsAssembly(Assembly.GetAssembly(typeof(AppDbContext)).GetName().Name);
+    });
+});
+
+
+
+
+//AutoFac etklenti yeri
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => containerBuilder.RegisterModule(new RepoServiceModule()));
+
+
+
 
 var app = builder.Build();
 
