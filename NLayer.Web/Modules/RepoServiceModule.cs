@@ -31,9 +31,13 @@ namespace NLayer.Web.Modules
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Repository"))
                     .AsImplementedInterfaces().InstancePerLifetimeScope();
 
+            //Service katmanındaki ProductServiceWithNoCaching icin
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("ProductServiceWithNoCaching"))
                     .AsImplementedInterfaces().InstancePerLifetimeScope();
 
+            //Service katmanındaki sonu Service ile bitenler icin
+            builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Service"))
+                    .AsImplementedInterfaces().InstancePerLifetimeScope();
             // InstancePerLifetimeScope => Scope methodu
 
         }
