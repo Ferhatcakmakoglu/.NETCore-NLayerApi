@@ -30,8 +30,9 @@
                 @* Dropdown menu icin select yaptık, asp-items ile nerden geldigini verdik
                     (Products Contollrer de incele)
                 *@
-                <select asp-for="CategoryId" asp-items="ViewBag.categories" class="form-control"></select>
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                <select asp-for="CategoryId" asp-items="ViewBag.categories" class="form-control">
+
+                </select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn-primary"/>
